@@ -52,6 +52,6 @@ app.listen(port, () =>
   console.log(
     `${chalk.white
       .bgHex('#41b883')
-      .bold(`NODE TIL SERVER IS RUNNING ON ${port}`)}`,
+      .bold(`NODE APP SERVER IS RUNNING ON ${port}`)}`,
   ),
 );
