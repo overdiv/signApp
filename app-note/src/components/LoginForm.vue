@@ -2,20 +2,16 @@
   <div>
     <form @submit.prevent="submitForm">
       <fieldset>
-        <legend>회원가입</legend>
+        <legend>로그인</legend>
         <div>
-          <label for="username">id: </label>
+          <label for="username">ID: </label>
           <input type="text" id="username" v-model="username" />
         </div>
         <div>
-          <label for="password">pw: </label>
+          <label for="password">PW: </label>
           <input type="text" id="password" v-model="password" />
         </div>
-        <div>
-          <label for="nickname">nickname: </label>
-          <input type="text" id="nickname" v-model="nickname" />
-        </div>
-        <button>회원 가입</button>
+        <button>로그인</button>
       </fieldset>
     </form>
     <p>
@@ -25,13 +21,12 @@
 </template>
 
 <script>
-import { registerUser } from '@/api';
+import { loginUser } from '@/api';
 export default {
   data() {
     return {
       username: '',
       password: '',
-      nickname: '',
       logMessage: '',
     };
   },
@@ -40,16 +35,15 @@ export default {
       const userData = {
         username: this.username,
         password: this.password,
-        nickname: this.nickname,
       };
-      const { data } = await registerUser(userData);
-      this.logMessage = `${data.username}님이 가입되었습니다`;
+      const { data } = await loginUser(userData);
+      console.log(data.user.username);
+      this.logMessage = `${data.user.username}님 환영합니다`;
       this.initForm();
     },
     initForm() {
       this.username = '';
       this.password = '';
-      this.nickname = '';
     },
   },
 };

@@ -8,6 +8,8 @@ const registerUser = userData => {
   return instance.post('signup', userData);
 };
 
-const loginUser = () => {};
+const loginUser = userData => {
+  return instance.post('login', userData);
+};
 
-export { registerUser };
+export { registerUser, loginUser };
