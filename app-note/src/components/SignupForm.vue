@@ -2,7 +2,7 @@
   <div>
     <form @submit.prevent="submitForm">
       <fieldset>
-        <legend>회원가입</legend>
+        <legend class="sr-only">회원가입</legend>
         <div>
           <label for="username">id: </label>
           <input type="text" id="username" v-model="username" />

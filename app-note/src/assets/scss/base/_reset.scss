@@ -1,0 +1,92 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address,
+em,
+img,
+small,
+strong,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+summary,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  line-height: 1
+}
+
+button, select, textarea {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul, ol {
+  list-style: none
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+input,
+select {
+  vertical-align: middle
+}

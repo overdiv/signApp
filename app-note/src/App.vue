@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <div id="app">
     <AppHeader />
-    <router-view></router-view>
+    <div class="wrap-contents">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -14,4 +16,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+@import 'assets/scss/app';
+</style>
